@@ -1,0 +1,92 @@
+/*----------------------
+***** Testimonials *****
+-------------------------*/
+
+.owl-carousel {
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: center;
+
+    .owl-item {
+        .client-image {
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            max-width: 120px;
+
+            img {
+                border: 4px solid #ddd;
+                border-radius: 100%;
+                height: auto;
+                width: 100%
+            }
+        }
+        .client-name {
+            font-style: italic;
+            font-weight: 500;
+        }
+        .client-testimonial {
+            font-size: 20px;
+        }
+    }
+
+    .owl-nav {
+        height: 30px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        .owl-next,
+        .owl-prev {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            color: #fff;
+            height: 30px;
+            line-height: 1;
+            margin: 0;
+            opacity: .25;
+            outline: 0;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 30px;
+
+            span {
+                font-size: 64px;
+                font-weight: 300;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+        .owl-prev {
+            background-image: url("../images/prev.svg") !important;
+            left: -100px;
+        }
+
+        .owl-next {
+            background-image: url("../images/next.svg") !important;
+            right: -100px;
+        }
+    }
+    .owl-dots {
+        margin-top: 1rem;
+
+        .owl-dot {
+            span {
+                background-color: #ddd;
+                border-radius: 6px;
+                display: inline-block;
+                height: 5px;
+                margin: 4px;
+                width: 15px;
+            }
+        }
+    }
+}

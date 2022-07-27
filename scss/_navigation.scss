@@ -1,0 +1,95 @@
+/* ----------------------
+******* Navigation ******
+-------------------------*/
+
+.navbar.fixed-top {
+    padding: 2rem 1rem;
+    transition: all ease .4s;
+    z-index: 9999;
+
+    &.shrink {
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,.06);
+        padding: .5rem 1rem;
+
+        .nav-item .nav-link {
+            color: $textColor;
+        }
+
+        .navbar-brand {
+            color: $headingColor;
+        }
+    }
+
+    .nav-item {
+        margin-right: 2rem;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .nav-link {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            outline: none;
+            padding: 0;
+            text-transform: uppercase;
+        }
+    }
+    .navbar-brand {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        svg {
+            height: auto;
+            max-width: 25px;
+            margin-right: 3px;
+            padding-bottom: 3px;
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        height: auto;
+        outline: 0;
+        padding: 2px 0 0;
+
+        &.open {
+            color: $headingColor;
+            font-size: 36px;
+        }
+        &.close {
+            color: #fff;
+            font-size: 20px;
+            left: 2rem;
+            opacity: 1;
+            padding: 5px 0;
+            position: absolute;
+            top: 16px;
+        }
+    }
+}
+.mm-overlay {
+    background-color: rgba(0,0,0,.75);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    transition: all ease .5s;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9998;
+}
+body {
+    &.mm-menu-open {
+        .mm-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

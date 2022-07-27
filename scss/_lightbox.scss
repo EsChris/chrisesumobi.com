@@ -1,0 +1,33 @@
+/* ----------------------
+**** Custom Lightbox ****
+-------------------------*/
+.lightbox .lb-image {
+    border-radius: 0;
+    border: 0;
+}
+.lb-data .lb-close {
+    background-image: url(../vendor/lightbox/img/close.svg);
+    margin-top: 5px;
+}
+.lb-nav a.lb-prev {
+    background-image: url(../vendor/lightbox/img/prev.svg);
+    left: -60px;
+}
+.lb-nav a.lb-next {
+    background-image: url(../vendor/lightbox/img/next.svg);
+    right: -60px;
+}
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
+    background-size: 40px;
+    opacity: 1;
+    position: absolute;
+    width: 50%;
+}
+.lightbox {
+    position: fixed;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}

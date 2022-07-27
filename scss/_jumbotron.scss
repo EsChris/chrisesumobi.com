@@ -1,0 +1,118 @@
+/* ----------------------
+******* Jumbotron *******
+-------------------------*/
+.clip-home {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.jumbotron {
+    background-image: url("../images/header_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    &.parallax-window {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    &#particles-js {
+        canvas {
+            &.particles-js-canvas-el {
+                position: absolute;
+                top: 0;
+                z-index: 8100;
+            }
+        }
+    }
+    &.video {
+        background-image: none;
+    }
+    .overlay {
+        background-color: rgba(0,0,0,.75);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 8000;
+    }
+    .intro {
+        color: #fff;
+        padding-top: 65px;
+        position: relative;
+        z-index: 8200;
+
+        .portrait-small {
+            background-image: url("../images/portrait_small.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 5px solid #eee;
+            border-radius: 100%;
+            height: 180px;
+            margin: 0 auto 2rem;
+            width: 180px;
+        }
+         h1 {
+             font-size: 4rem;
+             font-weight: 700;
+             line-height: 1;
+             letter-spacing: 2px;
+             margin-bottom: 1.25rem;
+             padding: 0;
+             text-transform: uppercase;
+
+             &::after {
+                 display: none;
+             }
+         }
+         .typewriter {
+             color: #fff;
+             font-size: 1.25rem;
+             font-weight: 500;
+             letter-spacing: 4px;
+             text-transform: uppercase;
+         }
+         .btn-primary {
+             color: #fff;
+         }
+    }
+    .scroll-down {
+        background-image: url("../images/arrow_down.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        bottom: 2rem;
+        color: #fff;
+        font-size: 2rem;
+        height: 50px;
+        left: 50%;
+        margin-left: -25px;
+        position: absolute;
+        width: 50px;
+        z-index: 8000;
+    }
+    .bounce {
+        animation: bounce 2s infinite;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation-name: bounce;
+    }
+    video {
+        height: auto;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+    }
+}

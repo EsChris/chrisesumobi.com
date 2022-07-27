@@ -1,0 +1,56 @@
+/* ----------------------
+********* About *********
+-------------------------*/
+.portrait {
+    img {
+        border-radius: 4px;
+    }
+}
+.about-contact-wrap {
+    ul {
+        margin-bottom: 2rem;
+        padding: 0;
+
+        li {
+            line-height: 2.15;
+            list-style: none;
+
+            span {
+                color: $headingColor;
+                display: inline-block;
+                font-weight: 500;
+                width: 140px;
+            }
+        }
+    }
+}
+
+/* Progress Bar */
+.progress-wrap {
+    .progress-header {
+        margin-bottom: 2px;
+        overflow: hidden;
+
+        span.label,
+        span.percentage {
+            font-weight: 600;
+        }
+        span.label {
+            float: left;
+        }
+        span.percentage {
+            float: right;
+        }
+    }
+    .progress {
+        background-color: #ccc;
+        border-radius: 0;
+        height: 6px;
+        margin-bottom: 1rem;
+    
+        .progress-bar {
+            transition-duration: 2s;
+            width: 0%;
+        }
+    }
+}

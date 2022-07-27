@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i300,300i,400,400i,500,500i,600,600i,700,700i');
+
+/*
+Template Name: Metabird – Responsive Bootstrap Personal Template
+Author: Metablox
+Version: 1.1.2
+Created: February 2020
+File Description: Main CSS file of the template
+*/
+
+
+/* ----------------------
+***** Global Styles *****
+-------------------------*/
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+/* ----------------------
+******* Preloader *******
+-------------------------*/
+.preloader {
+    background-color: #ffffff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    
+    .spinner {
+        animation: spin 1s infinite linear;
+        bottom: 0;
+        border: 3px solid #eeeeee;
+        border-radius: 100%;
+        border-top: 3px solid;
+        height: 70px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70px;
+    }
+}
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------------
+******* Typography ******
+-------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    color: $headingColor;
+    font-weight: 500;
+    line-height: 1.35;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+    &::after {
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 80px;
+    }
+}
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+strong {
+    color: $headingColor;
+    font-weight: 500;
+}
+a:hover {
+    color: $headingColor;
+}
+.subtitle {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+/* ----------------------
+******** Buttons ********
+-------------------------*/
+.btn {
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+        outline: 0;
+    }
+
+    &.btn-primary,
+    &.btn-secondary {
+        &:hover,
+        &:focus {
+            box-shadow: none !important;
+            outline: 0;
+        }
+    }
+
+    &.btn-secondary {
+
+        &:focus,
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active {
+            outline: 0;
+        }
+    }
+    &.btn-primary {
+        background-color: transparent;
+        overflow: hidden;
+        position: relative;
+        
+        z-index: 1;
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active {
+            outline: 0;
+        }
+        &:hover {
+            color: #fff;   
+        }
+        &::after {
+            content: "";
+            height: 100%;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transform: translateX(-50%) skew(30deg);
+            transform: translateX(-50%) skew(30deg);
+            transition: all ease .4s;
+            width: 0%;
+            z-index: -1;
+        }
+        &:hover::after {
+            opacity: 1;
+            width: 130%;
+        }
+    }
+}
+
+/* ----------------------
+******* Back to top ******
+-------------------------*/
+.back-to-top {
+    background-color: rgba(0,0,0,.45);
+    background-image: url("../images/back_to_top.svg");
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 4px;
+    bottom: 1rem;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 1rem;
+    width: 40px;
+    z-index: 9999;
+}
+
+/* ----------------------
+******** Sections *******
+-------------------------*/
+section {
+    overflow: hidden;
+    width: 100%;
+
+    &#home {
+        padding: 0;
+    }
+    
+    .inner {
+        padding: 6rem 0;
+    }
+}
+.lighten {
+    background-color: $lightGrey;
+}
+
+/* ----------------------
+***** Boxed Content *****
+-------------------------*/
+body {
+    color: $textColor;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+
+    &.boxed-content {
+        background-color: #ccc;
+
+        .wrapper {
+            background-color: #fff;
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+
+        .navbar.fixed-top {
+            left: 50%;
+            max-width: 1440px;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .jumbotron {
+            height: auto;
+            padding: 10rem 0;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+/* ----------------------
+******* Portfolio *******
+-------------------------*/
+.filters-group {
+    .filter-options {
+        display: block;
+    }
+
+    .btn {
+        border: 0;
+        display: inline-block;
+        padding: .5rem 1rem;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+#project-grid {
+    .project-item {
+
+        &:nth-child(-n+3) {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all ease .3s;
+        }
+
+        a {
+            display: block;
+            overflow: hidden;
+            position: relative;
+
+            &::before,
+            &::after
+             {
+                transition: all ease .3s;
+            }
+
+            &::before {
+                background-color: rgba(255,255,255,.75);
+                bottom: -100%;
+                content: "";
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+            }
+
+            &::after {
+                content: "\e959";
+                font-family: 'LineIcons';
+                font-size: 1.75rem;
+                font-weight: 600;
+                left: 50%;
+                opacity: 0;
+                position: absolute;
+                top: 0%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                &::before {
+                    bottom: 0;
+                    opacity: 1;
+                }
+
+                &::after {
+                    opacity: 1;
+                    top: 50%;
+                }
+            }
+        }
+    }
+}
