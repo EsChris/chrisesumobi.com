@@ -1,0 +1,55 @@
+a, 
+h1,
+h1::after,
+.btn.btn-primary,
+.navbar.fixed-top #main-menu .nav-item .nav-link.active,
+.service .card .card-header,
+.filters-group .btn.active,
+#project-grid .project-item a::after,
+.typed-cursor,
+#contact .icon {
+    color: #ea5254;
+}
+
+h1::after,
+.btn.btn-primary::after,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show > .btn-primary.dropdown-toggle,
+.btn.btn-secondary,
+.btn.btn-secondary:focus, 
+.btn.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn.btn-secondary:not(:disabled):not(.disabled):active,
+.progress-wrap .progress .progress-bar,
+.owl-dots .owl-dot.active span,
+footer {
+    background-color: #ea5254;
+}
+
+.btn,
+.btn:hover,
+.btn.btn-primary:not(:disabled):not(.disabled).active, 
+.btn.btn-primary:not(:disabled):not(.disabled):active,
+.btn.btn-primary:focus, 
+.btn.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn.btn-secondary:not(:disabled):not(.disabled):active,
+.btn.btn-secondary:focus {
+    border-color: #ea5254;
+}
+
+.navbar.fixed-top.shrink .navbar-brand svg path {
+    fill: #ea5254;
+}
+
+.preloader .spinner {
+    border-top-color: #ea5254;
+}
+
+@media screen and (max-width: 991.98px) {
+    .navbar.fixed-top .navbar-brand svg path {
+        fill: #ea5254;
+    }
+    .navbar.fixed-top #main-menu {
+        background-color: #ea5254;
+    }  
+}
