@@ -164,6 +164,30 @@ a:hover {
   width: 130%;
 }
 
+/*-------Contact Send Button--------*/
+.button10 {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid #ea5254;
+  color:#ea5254;
+  letter-spacing:1px;
+  text-shadow:0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  }
+
+ .button10:hover{
+  color: white;
+  background: #ea5254;
+ }
+
+  
 /* ----------------------
 ******* Back to top ******
 -------------------------*/
@@ -275,6 +299,12 @@ body.boxed-content .jumbotron {
   outline: none;
   padding: 0;
   text-transform: uppercase;
+}
+
+ .nav-link:hover:not(.active) {
+  background: #ea5254;
+  color: white;
+  border-radius: 5px;
 }
 
 .navbar.fixed-top .navbar-brand {
@@ -767,7 +797,7 @@ body.mm-menu-open .mm-overlay {
   color: #61b752;
   margin-top: -60px;
   display: block;
-  margin-left: 100px;
+  margin-left: 145px;
 }
 
 #contact .contact-form input,
@@ -975,6 +1005,31 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 768px), (max-width: 820px) {
+   /*Education*/
+   .card1 {
+    flex: 100%;
+    height: 400px;
+   }
+   .edu .card {
+    border-radius: 4px;
+    max-width: 100%;
+  }
+  
+  .edu .card .card-header {
+    padding: 0;
+  }
+  
+  .edu .card .card-body {
+    padding: 1rem;
+  }
+  
+  .edu .card .card-body .card-text  {
+    margin-bottom: 1.75rem;
+    font-size: smaller;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   /* Services */
   .service {
@@ -989,7 +1044,9 @@ footer a:hover {
   #project-grid .project-item:not(:last-child) {
     margin-bottom: 2rem;
   }
+
 }
+
 
 @media screen and (max-width: 575.98px) {
   /* Global */
@@ -1045,6 +1102,10 @@ footer a:hover {
   #about .btn.btn-secondary {
     margin-bottom: .75rem;
     margin-right: 0 !important;
+  }
+  #node{
+    width: 50%;
+    margin-left: 25%;
   }
 }
 /*# sourceMappingURL=master.css.map */
