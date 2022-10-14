@@ -1,10 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i300,300i,400,400i,500,500i,600,600i,700,700i");
 /*
-Template Name: Metabird – Responsive Bootstrap Personal Template
 Author: Metablox
 Version: 1.1.2
-Created: February 2020
+Created: July 2022
 File Description: Main CSS file of the template
 */
 /* ----------------------
@@ -13,6 +12,7 @@ File Description: Main CSS file of the template
 body {
   overflow-x: hidden;
   position: relative;
+
 }
 
 img {
@@ -646,6 +646,9 @@ body.mm-menu-open .mm-overlay {
 
 .service .card .card-body .card-text {
   font-size: 14px;
+}
+#services{
+  background-image: url("../images/YsWRDA1.gif");
 }
 
 /* ----------------------
